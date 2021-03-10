@@ -191,7 +191,7 @@ while uptime() < deadline do
 	eventData = {pullSignal(deadline - uptime())}
 	if eventData[1] == stringKeyDown and eventData[4] == 56 then
 		local utilities = {
-			menuElement("Disk management", function()
+			menuElement("Boot menu", function()
 				local restrict, filesystems, filesystemOptions =
 					function(text, limit)
 						if #text < limit then
@@ -228,7 +228,7 @@ while uptime() < deadline do
 							end, 1))
 
 							tableInsert(filesystemOptions, menuElement("Format", function()
-								status(stringsMain, "Formatting filesystem " .. address)
+								status(stringsMain, "Formatting disk " .. address)
 								
 								for _, file in ipairs(proxy.list("/")) do
 									proxy.remove(file)
@@ -269,7 +269,7 @@ while uptime() < deadline do
 
 		if internetAddress then	
 			tableInsert(utilities, 2, menuElement("Internet recovery", function()
-				local handle, data, result, reason = componentProxy(internetAddress).request("https://raw.githubusercontent.com/IgorTimofeev/MineOS/master/Installer/Main.lua"), ""
+				local handle, data, result, reason = componentProxy(internetAddress).request("https://raw.githubusercontent.com/vberezinbadger/badgeropen/master/Installer/Main.lua"), ""
 
 				if handle then
 					status(stringsMain, "Downloading recovery script")
