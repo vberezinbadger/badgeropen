@@ -27,7 +27,7 @@ end
 
 local function title()
 	local y = math.floor(screenHeight / 2 - 1)
-	centrizedText(y, 0x2D2D2D, "MineOS")
+	centrizedText(y, 0x2D2D2D, "BadgerOpen")
 	return y + 2
 end
 
@@ -221,11 +221,11 @@ window:addChild(GUI.panel(1, 1, window.width, window.height, 0xE1E1E1))
 
 -- Top menu
 local menu = workspace:addChild(GUI.menu(1, 1, workspace.width, 0xF0F0F0, 0x787878, 0x3366CC, 0xE1E1E1))
-local installerMenu = menu:addContextMenuItem("MineOS", 0x2D2D2D)
-installerMenu:addItem("Shutdown").onTouch = function()
+local installerMenu = menu:addContextMenuItem("BadgerOpen", 0x2D2D2D)
+installerMenu:addItem("Power off").onTouch = function()
 	computer.shutdown()
 end
-installerMenu:addItem("Reboot").onTouch = function()
+installerMenu:addItem("Reset PC").onTouch = function()
 	computer.shutdown(true)
 end
 installerMenu:addSeparator()
@@ -527,7 +527,7 @@ addStage(function()
 
 	-- Renaming if possible
 	if not selectedFilesystemProxy.getLabel() then
-		selectedFilesystemProxy.setLabel("MineOS HDD")
+		selectedFilesystemProxy.setLabel("BadgerSYS")
 	end
 
 	local function switchProxy(runnable)
@@ -556,7 +556,7 @@ addStage(function()
 	workspace:draw()
 	
 	EEPROMProxy.set(request(EFIURL))
-	EEPROMProxy.setLabel("MineOS EFI")
+	EEPROMProxy.setLabel("Badger)
 	EEPROMProxy.setData(selectedFilesystemProxy.address)
 
 	-- Downloading files
