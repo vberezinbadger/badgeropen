@@ -64,7 +64,7 @@
 	newFile = "Файл",
 	newFileFromURL = "Файл по URL",
 	newImage = "Изображение",
-	newApplication = "Приложение MineOS",
+	newApplication = "BadgerOpen Framework App",
 	paste = "Вставить",
 	copy = "Копировать",
 	cut = "Вырезать",
