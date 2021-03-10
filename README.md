@@ -1,9 +1,9 @@
-English | [中文(简体)](https://github.com/IgorTimofeev/MineOS/blob/master/README-zh_CN.md)
+English text
 
 ## BadgerOpen Standalone has released!
 
 Hello again, dear friend. Thank you for being with us and supporting our ideas throughout the long development cycle. MineOS has finally reached the release stage: now it is a completely independent operating system with its own lightweight development API and wonderful [illustrated wiki](https://github.com/IgorTimofeev/MineOS/wiki) of it's usage. 
-MineOS is a GUI based operating system for the Open Computers minecraft mod. It has extensive and powerful customisation abilities as well as an app market to publish your creations among the community.
+BadgerOpen is a GUI based operating system for the Open Computers minecraft mod. It has extensive and powerful customisation abilities as well as an app market to publish your creations among the community.
 Here's a list of a few features:
 
 -   Multitasking
@@ -25,14 +25,8 @@ The easiest way is to use default **pastebin** script. Insert an OpenOS floppy d
 
 	none
 
-You can paste it to console using middle mouse button or insert key (by default). If for some reason the pastebin method isn't available to you (for example, it's blacklisted on game server or blocked by Internet provider), use alternative command to download the installer directly from the github page:
+You can paste install link in CyanBIOS (open Internet install and paste link):
 
-	none
+	https://raw.githubusercontent.com/vberezinbadger/badgeropen/master/Installer/Main.lua
 
 After a moment, a nice system installer will be shown. You will be prompted to select your preferred language, select and format a boot volume, create a user profile and customize some settings. After that, the system will be successfully installed. More powerful setups will be able to install it faster so it is reccomended to use 
-
-## How to \*do_something\*?
-
-[Wiki-wiki-wiki. Wi...
-...
-...ki.](https://github.com/IgorTimofeev/MineOS/wiki)
