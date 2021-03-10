@@ -556,7 +556,7 @@ addStage(function()
 	workspace:draw()
 	
 	EEPROMProxy.set(request(EFIURL))
-	EEPROMProxy.setLabel("Badger)
+	EEPROMProxy.setLabel("Badger")
 	EEPROMProxy.setData(selectedFilesystemProxy.address)
 
 	-- Downloading files
